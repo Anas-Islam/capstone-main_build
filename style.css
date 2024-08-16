@@ -1,0 +1,200 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color:rgb(213,226,255);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+#logo{
+    width: 200px;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px; 
+    padding: 20px;
+    flex: 1;
+    align-items: center;
+    justify-items: center;
+}
+
+.all-personal{
+    background-color:rgb(213, 226, 255);
+}
+
+.both-sidebars{
+    display:flex;
+    justify-content:center;
+}
+
+.left-sidebar{
+    display:flex;
+    width:20%;
+    flex-direction:column;
+    flex-wrap:wrap; 
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color:rgb(135, 191, 255);
+}
+
+
+.left-sidebar p{
+    font-weight:500;
+    font-size:20px;
+}
+.left-sidebar h1{
+    margin-left:20px;
+    margin-right:20px;
+}
+.left-sidebar img{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:20px;
+    width:200px;
+    border:2px solid black;
+}
+
+.right-sidebar{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+}
+
+.project{
+    text-justify:start;
+    border:2px solid black;
+    background-color: rgb(202, 227, 255);
+    border-radius:10px;
+    margin:20px;
+    padding:20px;
+}
+
+
+.profile-box{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3 ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border:2px solid black;
+}
+
+.profile-box:hover {
+    transform: scale(1.05);
+}
+
+.photo-container{
+    height: 50%
+}
+
+.photo-container {
+    height: 50%;
+    position: relative;
+    width: 50%;
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: left;
+    height: 50%;
+}
+
+.profile-info h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.profile-info p {
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.profile-box:active {
+    transform: scale(1.1);
+}
+
+.heading {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.foot {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.headshot{
+    width:50%;
+}
+
+.project a{
+    text-decoration:underline;
+}
+
+#cool {
+    font-size: xx-small;
+}
+
+#Back-button, #next-button {
+    position: fixed; 
+    bottom: 20px; 
+}
+
+#next-button {
+    right: 20px; 
+}
+
+.nav-button {
+    background-color: #38414b; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.nav-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.nav-button:focus {
+    outline: none; 
+}
